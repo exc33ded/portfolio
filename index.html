@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mohammed Sarim</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Mohammed Sarim</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assets/about-pic.png" alt="Mohammed Sarim Profile Picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mohammed Sarim</h1>
+        <p class="section__text__p2">Data Scientist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('assets/CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+
+        <div id="socials-container">
+          <img
+            src="assets/linkedin.png"
+            alt="My Linkden Profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/mohammed-sarim-ml', '_blank');"
+          />
+          <img
+            src="assets/github.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="window.open('https://github.com/exc33ded', '_blank');"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="assets/profile-pic.png"
+            alt="This is Me"
+            class="about-pic"
+          />
+        </div>
+
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="assets/experience.png"
+                alt="experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                3+ months <br />
+                Python and Machine Learning Engineering
+              </p>
+            </div>
+
+            <div class="details-container">
+              <img
+                src="assets/education.png"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                Bachelor's of Science in Computer Application<br />
+                Master in Computer Application
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Passionate about leveraging data-driven solutions and technology
+              to drive innovation, I am currently pursuing a Master's in
+              Computer Applications at Aligarh Muslim University. My academic
+              journey has been centered around cultivating expertise in data
+              analysis, predictive modeling, and machine learning, while
+              building a strong foundation in Python and SQL.
+            </p>
+            <br />
+
+            <p>
+              <b>Approach to Problem-Solving:</b><br />
+              My problem-solving approach is characterized by a systematic and
+              analytical mindset. I excel at breaking down complex challenges
+              into manageable components, allowing me to develop effective and
+              efficient solutions. My commitment to continuous improvement
+              drives me to stay current with the latest advancements in data
+              science and technology. I am dedicated to seeking out new ideas
+              and innovative methodologies to elevate the quality of my work.
+            </p>
+            <br />
+            <p>
+              <b>Vision and Aspirations:</b><br />
+              My journey in the field of Computer Applications has been shaped
+              by my unwavering enthusiasm for technology-driven innovation. I
+              envision myself as a dedicated professional who not only excels in
+              data science and technology but also contributes meaningfully to
+              the industry's growth. Through my Master's program and beyond, I
+              am excited to explore opportunities that allow me to apply my
+              skills, embrace challenges, and continuously expand my expertise.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="assets/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='/#experience'"
+      />
+    </section>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Web Development -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  Full Stack Web Development (Python-Django Stack, LAMP
+                  Framework)
+                </div>
+                <p></p>
+              </article>
+
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>Technical Languages (Python, Java)</div>
+                <p></p>
+              </article>
+
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>Database Management (SQL)</div>
+                <p></p>
+              </article>
+            </div>
+          </div>
+          <!-- Machine Learning -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Machine Learning</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>Machine Learning</div>
+                <p></p>
+              </article>
+
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>Deep Learning</div>
+                <p></p>
+              </article>
+
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>Model Deployment</div>
+                <p></p>
+              </article>
+
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>End-to-End ML Pipelines</div>
+                <p></p>
+              </article>
+            </div>
+          </div>
+
+          <!-- General Skills and Version Control -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">
+              General Skills and Version Control
+            </h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>Microsoft Office</div>
+                <p></p>
+              </article>
+
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>Git</div>
+                <p></p>
+              </article>
+
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>Github</div>
+                <p></p>
+              </article>
+            </div>
+          </div>
+          <!-- Soft Skills -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Soft Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>Team Leadership</div>
+                <p></p>
+              </article>
+
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>Teamwork</div>
+                <p></p>
+              </article>
+
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>Problem Solving</div>
+                <p></p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="assets/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='/#projects'"
+      />
+    </section>
+
+    <section id="projects">
+
+    </section>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
