@@ -430,3 +430,27 @@ footer {
 footer p {
   text-align: center;
 }
+
+.text-container {
+  text-align: justify;
+}
+
+
+.role-title {@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; /* Expand to full width */
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #333;
+  }
+}
+}
