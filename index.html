@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohammed Sarim | AI Developer</title>
+  <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <!-- Three.js -->
+  <script src="js/three.js"></script>
+  <script src="js/OrbitControls.js"></script>
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">MS</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#volunteer">Volunteer</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="btn-primary">Contact</a>
+      </div>
+      <div class="theme-toggle">
+        <span class="material-icons">dark_mode</span>
+      </div>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text" data-aos="fade-right">
+          <h1>Mohammed <span class="highlight">Sarim</span></h1>
+          <h2>AI Developer & Researcher</h2>
+          <p>Building intelligent solutions through data science and machine learning</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="#" class="btn-secondary">Download CV</a>
+          </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left">
+          <div class="image-container">
+            <img src="media/about-pic.png" alt="Mohammed Sarim">
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <p>Scroll to explore</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-card" data-aos="fade-up">
+          <div class="icon"><span class="material-icons">psychology</span></div>
+          <h3>Problem Solver</h3>
+          <p>Dedicated to finding elegant solutions to complex problems through data-driven approaches.</p>
+        </div>
+        <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon"><span class="material-icons">analytics</span></div>
+          <h3>Data Scientist</h3>
+          <p>Extracting meaningful insights from data to drive business decisions and innovation.</p>
+        </div>
+        <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon"><span class="material-icons">smart_toy</span></div>
+          <h3>AI Developer</h3>
+          <p>Building and deploying machine learning models to solve real-world challenges.</p>
+        </div>
+      </div>
+      <div class="connect-links" data-aos="fade-up">
+        <a href="mailto:msarim9662@gmail.com" class="connect-item">
+          <span class="material-icons">email</span>
+          <span>msarim9662@gmail.com</span>
+        </a>
+        <a href="tel:+917417800414" class="connect-item">
+          <span class="material-icons">phone</span>
+          <span>+91 7417800414</span>
+        </a>
+        <a href="https://www.linkedin.com/in/mohammed-sarim-ml/" target="_blank" class="connect-item">
+          <span class="material-icons" style="width: 30px;">linkedin</span>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/exc33ded" target="_blank" class="connect-item">
+          <span class="material-icons">code</span>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Globe Section -->
+  <section class="skills-globe-section" id="skills">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Skills</h2>
+      <div class="globe-container" data-aos="fade-up">
+        <div id="globe"></div>
+        <div class="globe-controls">
+          <button class="globe-control-btn" id="autoRotate">
+            <span class="material-icons">rotate_right</span>
+          </button>
+          <button class="globe-control-btn" id="resetView">
+            <span class="material-icons">restart_alt</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience-section" id="experience">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">March 2023 - May 2023</div>
+            <h3>Competitive Programming Intern</h3>
+            <h4>Computer Science Society, AMU</h4>
+            <ul>
+              <li>Solved 400+ competitive programming challenges</li>
+              <li>Collaborated on weekly coding contests</li>
+              <li>Enhanced problem-solving and algorithmic skills</li>
+            </ul>
+            <div class="skills-used">
+              <span>Data Structures</span>
+              <span>Algorithms</span>
+              <span>Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">March 2022 - May 2022</div>
+            <h3>Data Science Intern</h3>
+            <h4>SmartKnower</h4>
+            <ul>
+              <li>Developed predictive models for marketing optimization</li>
+              <li>Conducted comprehensive data analysis</li>
+              <li>Presented data-driven solutions to stakeholders</li>
+            </ul>
+            <div class="skills-used">
+              <span>Python</span>
+              <span>Machine Learning</span>
+              <span>Data Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Add this after the Experience section and before Publications section -->
+  <section class="volunteer-section" id="volunteer">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Volunteer Work</h2>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">September 2024 - Present</div>
+            <h3>AI Mentor</h3>
+            <h4>Computer Science Society - Aligarh Muslim University</h4>
+            <ul>
+              <li>Led initiatives to educate and inspire junior students about the transformative applications of AI in
+                diverse fields such as healthcare, finance, and technology.</li>
+              <li>Organized and supervised an AI-focused hackathon, fostering teamwork, innovation, and problem-solving
+                by addressing real-world challenges with AI-driven solutions.</li>
+              <li>Provided mentorship and guidance to students, encouraging active participation and exploration of
+                cutting-edge AI technologies.</li>
+            </ul>
+            <div class="skills-used">
+              <span>AI Education</span>
+              <span>Mentorship</span>
+              <span>Event Organization</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">August 2023 - August 2024</div>
+            <h3>Machine Learning Lead</h3>
+            <h4>GDSC - Aligarh Muslim University</h4>
+            <ul>
+              <li>Spearheaded the Machine Learning division, organizing and leading impactful events to promote machine
+                learning awareness and skills development within the student community.</li>
+              <li>Orchestrated a successful hackathon, providing a platform for students to showcase their innovation
+                and problem-solving abilities in the field of machine learning.</li>
+            </ul>
+            <div class="skills-used">
+              <span>ML Leadership</span>
+              <span>Event Management</span>
+              <span>Community Building</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">February 2023</div>
+            <h3>Report Writer</h3>
+            <h4>International Conference on Emerging Computational Intelligence</h4>
+            <ul>
+              <li>Compiled and summarized reports from various conference sessions, ensuring accuracy and clarity.</li>
+              <li>Assisted in the publication of summaries in a newspaper, demonstrating the ability to convey complex
+                information in an accessible manner.</li>
+            </ul>
+            <div class="skills-used">
+              <span>Technical Writing</span>
+              <span>Research</span>
+              <span>Communication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section class="publications-section" id="publications">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Publications</h2>
+      <div class="publications-grid">
+        <div class="publication-card" data-aos="fade-up">
+          <div class="publication-content">
+            <h3>Machine Learning Based Predictive Modeling of Student Counseling Gratification</h3>
+            <p>A case study of Aligarh Muslim University exploring how machine learning can predict and improve student
+              counseling outcomes.</p>
+            <div class="publication-meta">
+              <span>Springer Journal, 2023</span>
+              <a href="https://link.springer.com/article/10.1007/s41870-023-01620-0" class="btn-text"
+                target="_blank">Read Paper <span class="material-icons">arrow_forward</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="publication-content">
+            <h3>Direct Speech to Speech Translation: A Review</h3>
+            <p>A comprehensive analysis of current approaches and challenges in direct speech-to-speech translation
+              systems.</p>
+            <div class="publication-meta">
+              <span>arXiv, 2025</span>
+              <a href="https://arxiv.org/abs/2503.04799" class="btn-text" target="_blank">Read Paper <span
+                  class="material-icons">arrow_forward</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+  
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-image">
+          <div class="image-slider">
+            <img src="media/llm/ss1.png" alt="LLM Project Manager Screenshot">
+          </div>
+          <div class="slider-controls">
+            <span class="slider-prev"><span class="material-icons">arrow_back</span></span>
+            <span class="slider-next"><span class="material-icons">arrow_forward</span></span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>LLM Based Project Manager</h3>
+          <p>An intelligent project management system that integrates AI to generate project summaries, assist in task management, and provide intelligent recommendations for efficient workflow execution.</p>
+          <ul class="project-features">
+            <li>Project-specific chat memory with retained conversation history</li>
+            <li>Role-based access control (admin, project manager, worker)</li>
+            <li>Secure authentication and controlled access to project data</li>
+          </ul>
+          <div class="tech-stack">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>HTML/CSS</span>
+            <span>Gemini/Ollama</span>
+            <span>SQLite</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/exc33ded/Advanced-Project-Manager-for-AMU" class="btn-text" target="_blank">
+              <span class="material-icons">code</span> View Code
+            </a>
+            <!-- <a href="#" class="btn-text" target="_blank">
+              <span class="material-icons">open_in_new</span> Live Demo
+            </a> -->
+          </div>
+        </div>
+      </div>
+  
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-image">
+          <div class="image-slider">
+            <img src="media/dr-recorder/ss1.png" alt="Dr Recorder Screenshot">
+            <img src="media/dr-recorder/ss2.png" alt="Dr Recorder Screenshot">
+          </div>
+          <div class="slider-controls">
+            <span class="slider-prev"><span class="material-icons">arrow_back</span></span>
+            <span class="slider-next"><span class="material-icons">arrow_forward</span></span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Dr Recorder</h3>
+          <p>A web application that enables users to record, upload, and process English and Hindi audio recordings for translation studies.</p>
+          <ul class="project-features">
+            <li>Secure storage in Google Drive with user authentication</li>
+            <li>Hashed passwords and login system for user security</li>
+            <li>Efficient audio processing with Flask, Pydub, and Flask-Caching</li>
+          </ul>
+          <div class="tech-stack">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
+            <span>SQLite</span>
+            <span>Google Drive API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/exc33ded/Dr-Recorder" class="btn-text" target="_blank">
+              <span class="material-icons">code</span> View Code
+            </a>
+            <a href=https://dr-recorder.onrender.com/" class="btn-text" target="_blank">
+              <span class="material-icons">open_in_new</span> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-image">
+          <div class="image-slider">
+            <img src="media/hds/ss1.png" alt="Health Discernment System Screenshot">
+            <img src="media/hds/ss2.png" alt="Health Discernment System Screenshot">
+            <img src="media/hds/ss3.png" alt="Health Discernment System Screenshot">
+            <img src="media/hds/ss4.png" alt="Health Discernment System Screenshot">
+          </div>
+          <div class="slider-controls">
+            <span class="slider-prev"><span class="material-icons">arrow_back</span></span>
+            <span class="slider-next"><span class="material-icons">arrow_forward</span></span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Health Discernment System</h3>
+          <p>An AI-powered system that uses machine learning to analyze symptoms and medical history, providing personalized illness predictions.</p>
+          <ul class="project-features">
+            <li>Intuitive interface for proactive health engagement</li>
+            <li>Regular updates aligned with latest medical advancements</li>
+            <li>Accurate health assessments through ML algorithms</li>
+          </ul>
+          <div class="tech-stack">
+            <span>Python</span>
+            <span>TensorFlow</span>
+            <span>Scikit-Learn</span>
+            <span>Flask</span>
+            <span>Tailwind</span>
+            <span>SQLite</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/exc33ded/HealthDS" class="btn-text" target="_blank">
+              <span class="material-icons">code</span> View Code
+            </a>
+            <!-- <a href="#" class="btn-text">
+              <span class="material-icons">videocam</span> Watch Demo
+            </a> -->
+          </div>
+        </div>
+      </div>
+  
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-image">
+          <div class="image-slider">
+            <img src="media/pms/ss1.webp" alt="Project Management System Screenshot">
+          </div>
+          <div class="slider-controls">
+            <span class="slider-prev"><span class="material-icons">arrow_back</span></span>
+            <span class="slider-next"><span class="material-icons">arrow_forward</span></span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Project Management System</h3>
+          <p>A comprehensive system for managing projects with optimized task assignments and resource distribution to enhance productivity.</p>
+          <ul class="project-features">
+            <li>ML-driven analysis for resource optimization</li>
+            <li>Efficient task assignment and tracking</li>
+            <li>User-friendly interface for project management</li>
+          </ul>
+          <div class="tech-stack">
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
+            <span>HTML/CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/exc33ded/PMS" class="btn-text" target="_blank">
+              <span class="material-icons">code</span> View Code
+            </a>
+            <!-- <a href="#" class="btn-text" target="_blank">
+              <span class="material-icons">open_in_new</span> Live Demo
+            </a> -->
+          </div>
+        </div>
+      </div>
+  
+      <div class="cta-container" data-aos="fade-up">
+        <a href="https://github.com/exc33ded" class="btn-primary" target="_blank">View More Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+      <div class="contact-container">
+        <div class="contact-info" data-aos="fade-right">
+          <h3>Let's build something amazing together</h3>
+          <p>I'm currently looking for new opportunities to apply my AI and machine learning skills. Feel free to reach
+            out if you have a project in mind or just want to connect!</p>
+          <div class="contact-methods">
+            <div class="contact-method">
+              <span class="material-icons">email</span>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:msarim9662@gmail.com">msarim9662@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-method">
+              <span class="material-icons">phone</span>
+              <div>
+                <h4>Phone</h4>
+                <a href="tel:+917417800414">+91 7417800414</a>
+              </div>
+            </div>
+            <div class="contact-method">
+              <span class="material-icons">location_on</span>
+              <div>
+                <h4>Location</h4>
+                <p>Aligarh, Uttar Pradesh, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form" data-aos="fade-left">
+          <form id="contactForm">
+            <div class="form-group">
+               <label for="name">Name</label>
+               <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+               <label for="email">Email</label>
+               <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+               <label for="subject">Subject</label>
+               <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+               <label for="message">Message</label>
+               <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Message</button>
+         </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="#">MS</a>
+          <p>Building the future with AI</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-nav">
+            <h4>Navigation</h4>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#volunteer">Volunteer</a>
+            <a href="#publications">Publications</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-social">
+            <h4>Connect</h4>
+            <a href="https://www.linkedin.com/in/mohammed-sarim-ml/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/exc33ded" target="_blank">GitHub</a>
+            <a href="mailto:msarim9662@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Mohammed Sarim. All rights reserved.</p>
+        <p>Designed and developed with ❤️</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/globe.js"></script>
+  <script src="js/email.js"></script>
+</body>
+
+</html>
