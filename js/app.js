@@ -261,3 +261,77 @@ anchorLinks.forEach(link => {
   });
 });
 });
+
+// Publication modal functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const pubModal = document.getElementById('pubModal');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalAuthors = document.getElementById('modalAuthors');
+  const modalVenue = document.getElementById('modalVenue');
+  const modalAbstract = document.getElementById('modalAbstract');
+  const modalLinks = document.getElementById('modalLinks');
+  const closeBtn = document.querySelector('.pub-modal-close');
+
+  function openModal(data) {
+    modalTitle.textContent = data.title || '';
+    modalAuthors.textContent = data.authors || '';
+    modalVenue.textContent = data.venue || '';
+    modalAbstract.textContent = data.abstract || '';
+
+    // Populate links
+    modalLinks.innerHTML = '';
+    if (data.link && data.link !== '#') {
+      const a = document.createElement('a');
+      a.href = data.link;
+      a.target = '_blank';
+      a.className = 'btn-text';
+      a.textContent = 'Open Paper';
+      modalLinks.appendChild(a);
+    }
+
+    pubModal.classList.add('open');
+    pubModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    pubModal.classList.remove('open');
+    pubModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  // Wire read buttons
+  const readBtns = document.querySelectorAll('.pub-read');
+  readBtns.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      // If link points to external and has href, allow default
+      const href = btn.getAttribute('href');
+      const isPlaceholder = !href || href === '#';
+      e.preventDefault();
+
+      const data = {
+        title: btn.dataset.title,
+        authors: btn.dataset.authors,
+        venue: btn.dataset.venue,
+        abstract: btn.dataset.abstract,
+        link: btn.dataset.link || href
+      };
+
+      // If the link is external and not placeholder, open in new tab directly
+      if (data.link && data.link !== '#' && href && href !== '#') {
+        // still open modal but keep link
+      }
+
+      openModal(data);
+    });
+  });
+
+  // Close handlers
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  pubModal.addEventListener('click', function(e) {
+    if (e.target === pubModal) closeModal();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && pubModal.classList.contains('open')) closeModal();
+  });
+});
